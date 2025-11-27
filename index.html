@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barani Siddha Varma Vaidyasalai - Coming Soon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      /* Background */
+      .background {
+        position: fixed;
+        inset: 0;
+        background: url("./imgs/bg\ \(1\).jpeg");
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* Glass Card */
+      .card {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 40px 50px;
+        border-radius: 25px;
+
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        color: #fff;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+
+      .logo {
+        font-family: sans-serif;
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+
+      nav a {
+        margin-left: 28px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #eee;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #c4ffcf;
+      }
+
+      /* Content */
+      .hero-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .hero-content h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 52px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+      }
+
+      .hero-content p {
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 540px;
+        margin-bottom: 30px;
+        color: #f5f5f5;
+        opacity: 0.92;
+      }
+
+      /* Button */
+      .btn {
+        padding: 12px 32px;
+        font-size: 16px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        background: #ffffff;
+        color: #1b1b1b;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #d6ffd9;
+      }
+      .content-image img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .navbar nav {
+          display: none;
+        }
+
+        .hero-content h1 {
+          font-size: 36px;
+        }
+
+        .hero-content p {
+          font-size: 15px;
+        }
+
+        .card {
+          padding: 30px 25px;
+        }
+        .hero-content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-content h1 {
+          font-size: 30px;
+        }
+        .hero-content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <div class="card">
+      <header class="navbar">
+        <h2 class="logo">Barani Siddha Varma Vaidyasalai</h2>
+      </header>
+
+      <div class="hero-content">
+        <div class="">
+          <h1>Coming Soon</h1>
+
+          <p>
+            Our new Ayurvedic healing center website is under construction. We
+            are preparing a peaceful digital space where you can explore
+            holistic treatments, herbal therapies, wellness programs, and
+            natural healing traditions.
+          </p>
+
+          <a href="https://share.google/XTnnObhIZTd1LcFaV" class="btn"
+            >Contact Us</a
+          >
+        </div>
+        <div class="content-image">
+          <img src="./imgs/Screenshot 2025-11-27 183403.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
